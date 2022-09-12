@@ -5,7 +5,7 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         maven {
             name = "forge"
             url = "https://maven.minecraftforge.net/"
@@ -20,7 +20,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3.4'
 		classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.4'
         classpath "com.wynprice.cursemaven:CurseMaven:2.1.0"
     }
@@ -53,7 +53,7 @@ compileJava {
 }
 
 minecraft {
-    version = "1.12.2-14.23.5.2838"
+    version = "1.12.2-14.23.5.2847"
     runDir = "run"
     mappings = "stable_39"
 	
@@ -83,8 +83,8 @@ repositories {
         url = "https://maven.covers1624.net/"
     }
     maven {
-        name = "CurseForge"
-        url = "https://minecraft.curseforge.com/api/maven/"
+        name = "CurseMaven"
+        url = "https://cursemaven.com"
     }
     removeIf { it instanceof MavenArtifactRepository && it.url.host == 'files.minecraftforge.net' }
     maven {
