@@ -30140,21 +30140,21 @@ item.tfcflorae.ceramics.stoneware.fired.mold.chisel_head.copper.name=Форма 
 item.tfcflorae.ceramics.stoneware.fired.mold.sword_blade.copper.name=Форма для лезвия меча из Меди
 item.tfcflorae.ceramics.stoneware.fired.mold.mace_head.copper.name=Форма для оголовья булавы из Меди
 item.tfcflorae.ceramics.stoneware.fired.mold.saw_blade.copper.name=Форма для пильного полотна из Меди
-fluid.resin=Resin
+fluid.resin=Резина
 item.powder.coal.name=Coal Powder
 item.powder.fluorite.name=Fluorite Powder
 item.tfcflorae.food.peyote.name=Peyote
 item.tfcflorae.food.fonio_slice.name=Fonio Slice
 config.tfcflorae.general.world.enableAllPodzol=All Podzol
-fluid.sugar_cane_water=Sugar Cane Water
-fluid.sweet_sap=Sweet Sap
-fluid.sweet_syrup=Sweet Syrup
-fluid.kino=Kino
-fluid.salammoniac=Salammoniac
+fluid.sugar_cane_water=Вода из сахарного тростника
+fluid.sweet_sap=Сладкий сок
+fluid.sweet_syrup=Сладкий сироп
+fluid.kino=Кино
+fluid.salammoniac=Нашатырный спирт
 
 ## Devices
 
-tile.tfcflorae.devices.dryer.name=Drying Rack
+tile.tfcflorae.devices.dryer.name=Сушилка
 tile.tfcflorae.devices.stick_bundle.name=Stick Bundle
 tile.tfcflorae.devices.alembic.copper.name=Copper Alembic
 tile.tfcflorae.devices.alembic_condenser.copper.name=Copper Alembic Condenser
