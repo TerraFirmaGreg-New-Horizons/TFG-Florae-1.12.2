@@ -11,8 +11,8 @@ tfcflorae.tooltip.urn_seal=Запечатать урну
 tfcflorae.tooltip.urn_unseal=Распечатать урну
 tfcflorae.tooltip.crate_seal=Запечатать ящик
 tfcflorae.tooltip.crate_unseal=Распечатать ящик
-tfcflorae.tooltip.hours=Hours
-tfcflorae.tooltip.days=Days
+tfcflorae.tooltip.hours=Часы
+tfcflorae.tooltip.days=Дни
 
 ## Fluids
 fluid.distilled_water=Дистиллированная вода
