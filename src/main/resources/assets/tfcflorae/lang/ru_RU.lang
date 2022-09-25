@@ -30161,11 +30161,11 @@ tile.tfcflorae.devices.alembic_condenser.copper.name=Copper Alembic Condenser
 
 ## Stone types & variaties, Wood, Stairs, Slabs, ....
 
-tile.tfcflorae.powder.flux.name=Flux
+tile.tfcflorae.powder.flux.name=Флюс
 tile.tfcflorae.powder.coke.name=Coke
-tile.tfcflorae.powder.kaolinite.name=Kaolinite
-tile.tfcflorae.powder.graphite.name=Graphite
-tile.tfcflorae.powder.sulfur.name=Sulfur
+tile.tfcflorae.powder.kaolinite.name=Каолинит
+tile.tfcflorae.powder.graphite.name=Графит
+tile.tfcflorae.powder.sulfur.name=Сера
 tile.tfcflorae.powder.saltpeter.name=Saltpeter
 tile.tfcflorae.powder.hematite.name=Hematite
 tile.tfcflorae.powder.lapis_lazuli.name=Lapiz Lazuli
