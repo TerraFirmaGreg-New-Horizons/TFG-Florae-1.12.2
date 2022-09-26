@@ -30156,18 +30156,18 @@ fluid.salammoniac=Нашатырный спирт
 
 tile.tfcflorae.devices.dryer.name=Сушилка
 tile.tfcflorae.devices.stick_bundle.name=Stick Bundle
-tile.tfcflorae.devices.alembic.copper.name=Copper Alembic
-tile.tfcflorae.devices.alembic_condenser.copper.name=Copper Alembic Condenser
+tile.tfcflorae.devices.alembic.copper.name=Медный перегонный куб
+tile.tfcflorae.devices.alembic_condenser.copper.name=Медный перегонный конденсатор
 
 ## Stone types & variaties, Wood, Stairs, Slabs, ....
 
 tile.tfcflorae.powder.flux.name=Флюс
-tile.tfcflorae.powder.coke.name=Coke
+tile.tfcflorae.powder.coke.name=
 tile.tfcflorae.powder.kaolinite.name=Каолинит
 tile.tfcflorae.powder.graphite.name=Графит
 tile.tfcflorae.powder.sulfur.name=Сера
-tile.tfcflorae.powder.saltpeter.name=Saltpeter
-tile.tfcflorae.powder.hematite.name=Hematite
+tile.tfcflorae.powder.saltpeter.name=Селитра
+tile.tfcflorae.powder.hematite.name=Гематит
 tile.tfcflorae.powder.lapis_lazuli.name=Lapiz Lazuli
 tile.tfcflorae.powder.limonite.name=Limonite
 tile.tfcflorae.powder.malachite.name=Malachite
