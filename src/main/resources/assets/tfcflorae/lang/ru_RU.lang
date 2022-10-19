@@ -11,8 +11,8 @@ tfcflorae.tooltip.urn_seal=Запечатать урну
 tfcflorae.tooltip.urn_unseal=Распечатать урну
 tfcflorae.tooltip.crate_seal=Запечатать ящик
 tfcflorae.tooltip.crate_unseal=Распечатать ящик
-tfcflorae.tooltip.hours=Hours
-tfcflorae.tooltip.days=Days
+tfcflorae.tooltip.hours=Часы
+tfcflorae.tooltip.days=Дни
 
 ## Fluids
 fluid.distilled_water=Дистиллированная вода
@@ -30140,34 +30140,34 @@ item.tfcflorae.ceramics.stoneware.fired.mold.chisel_head.copper.name=Форма 
 item.tfcflorae.ceramics.stoneware.fired.mold.sword_blade.copper.name=Форма для лезвия меча из Меди
 item.tfcflorae.ceramics.stoneware.fired.mold.mace_head.copper.name=Форма для оголовья булавы из Меди
 item.tfcflorae.ceramics.stoneware.fired.mold.saw_blade.copper.name=Форма для пильного полотна из Меди
-fluid.resin=Resin
+fluid.resin=Резина
 item.powder.coal.name=Coal Powder
 item.powder.fluorite.name=Fluorite Powder
 item.tfcflorae.food.peyote.name=Peyote
 item.tfcflorae.food.fonio_slice.name=Fonio Slice
 config.tfcflorae.general.world.enableAllPodzol=All Podzol
-fluid.sugar_cane_water=Sugar Cane Water
-fluid.sweet_sap=Sweet Sap
-fluid.sweet_syrup=Sweet Syrup
-fluid.kino=Kino
-fluid.salammoniac=Salammoniac
+fluid.sugar_cane_water=Вода из сахарного тростника
+fluid.sweet_sap=Сладкий сок
+fluid.sweet_syrup=Сладкий сироп
+fluid.kino=Кино
+fluid.salammoniac=Нашатырный спирт
 
 ## Devices
 
-tile.tfcflorae.devices.dryer.name=Drying Rack
+tile.tfcflorae.devices.dryer.name=Сушилка
 tile.tfcflorae.devices.stick_bundle.name=Stick Bundle
-tile.tfcflorae.devices.alembic.copper.name=Copper Alembic
-tile.tfcflorae.devices.alembic_condenser.copper.name=Copper Alembic Condenser
+tile.tfcflorae.devices.alembic.copper.name=Медный перегонный куб
+tile.tfcflorae.devices.alembic_condenser.copper.name=Медный перегонный конденсатор
 
 ## Stone types & variaties, Wood, Stairs, Slabs, ....
 
-tile.tfcflorae.powder.flux.name=Flux
-tile.tfcflorae.powder.coke.name=Coke
-tile.tfcflorae.powder.kaolinite.name=Kaolinite
-tile.tfcflorae.powder.graphite.name=Graphite
-tile.tfcflorae.powder.sulfur.name=Sulfur
-tile.tfcflorae.powder.saltpeter.name=Saltpeter
-tile.tfcflorae.powder.hematite.name=Hematite
+tile.tfcflorae.powder.flux.name=Флюс
+tile.tfcflorae.powder.coke.name=
+tile.tfcflorae.powder.kaolinite.name=Каолинит
+tile.tfcflorae.powder.graphite.name=Графит
+tile.tfcflorae.powder.sulfur.name=Сера
+tile.tfcflorae.powder.saltpeter.name=Селитра
+tile.tfcflorae.powder.hematite.name=Гематит
 tile.tfcflorae.powder.lapis_lazuli.name=Lapiz Lazuli
 tile.tfcflorae.powder.limonite.name=Limonite
 tile.tfcflorae.powder.malachite.name=Malachite
