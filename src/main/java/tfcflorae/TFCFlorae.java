@@ -58,7 +58,7 @@ import tfcflorae.objects.entity.EntitiesTFCF;
 import tfcflorae.objects.items.ItemsTFCF;
 import tfcflorae.proxy.CommonProxy;
 import tfcflorae.util.CapabilityHeatHandler;
-import tfcflorae.util.ClassAdder;
+//import tfcflorae.util.ClassAdder;
 import tfcflorae.util.HelpersTFCF;
 import tfcflorae.util.OreDictionaryHelper;
 import tfcflorae.util.fuel.FuelsTFCF;
@@ -67,13 +67,12 @@ import tfcflorae.proxy.ClientProxy;
 import static tfcflorae.TFCFlorae.MODID;
 
 @SuppressWarnings({ "WeakerAccess", "unused" })
-@Mod(modid = TFCFlorae.MODID, name = TFCFlorae.NAME, version = TFCFlorae.VERSION, dependencies = TFCFlorae.DEPENDENCIES, certificateFingerprint = TFCFlorae.SIGNING_KEY)
+@Mod(modid = TFCFlorae.MODID, name = TFCFlorae.NAME, version = TFCFlorae.VERSION, dependencies = TFCFlorae.DEPENDENCIES)
 public class TFCFlorae
 {
     public static final String MODID = "tfcflorae";
-    public static final String NAME = "TFC Florae";
-    public static final String VERSION = "@VERSION@";
-    public static final String SIGNING_KEY = "@FINGERPRINT@";
+    public static final String NAME = "TFC-Florae";
+    public static final String VERSION = "1.5";
     public static final String DEPENDENCIES = "required-after:tfc@[1.7,);"
             + "after:firmalife;"
             + "after:tfcelementia;"
@@ -126,7 +125,7 @@ public class TFCFlorae
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        ClassAdder.addClasses(event.getModConfigurationDirectory());
+//        ClassAdder.addClasses(event.getModConfigurationDirectory());
         logger = event.getModLog();
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
