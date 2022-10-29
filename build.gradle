@@ -151,14 +151,14 @@ dependencies {
         annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
     }
 
-//    compileOnly files("libs/CraftTweaker2-1.12-4.1.20.681.jar")
+    compileOnly files("libs/CraftTweaker2-1.12-4.1.20.681.jar")
     compileOnly fg.deobf("curse.maven:had-enough-items-557549:3862733")
     implementation files("libs/TerraFirmaCraft-MC1.12.2-1.7.23.181-deobf.jar")
     compileOnly files("libs/firmalife-0.5.1.jar")
     compileOnly files("libs/TFC-Elementia-MC1.12.2-1.7.jar")
     compileOnly files("libs/TFC_PH_Compat-1.12.2-1.1.1.jar")
     compileOnly files("libs/TFCTech-Unofficial-MC1.12.2-1.2.16.jar")
-//    compileOnly files("libs/MTLib-3.0.7.jar")
+    compileOnly files("libs/MTLib-3.0.7.jar")
 
     if (project.use_mixins.toBoolean()) {
         compileOnly 'zone.rong:mixinbooter:5.0'
