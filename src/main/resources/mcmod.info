@@ -1,10 +1,10 @@
 [
   {
     "modid": "tfcflorae",
-    "name": "TFC Florae",
+    "name": "TFC-Florae",
     "description": "Adds a bunch of plants, trees and nother nature decorations to TerraFirmaCraft.",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
+    "version": "1.5",
+    "mcversion": "1.12.2",
     "logoFile": "/assets/tfcflorae/textures/gui/logo.png",
     "authorList": [
       "Verph"
