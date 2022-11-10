@@ -80,9 +80,8 @@ dependencies {
     compile "curse.maven:crafttweaker-239197:4036242"
 
     provided files("./libs/firmalife-0.5.1.jar")
-    provided files("./libs/TFC_PH_Compat-1.12.2-1.1.1.jar")
     provided files("./libs/TFCTech-Unofficial-MC1.12.2-1.2.16.jar")
-//    compile fileTree(include: ["*.jar"], dir: "libs")
+    compile fileTree(include: ["*.jar"], dir: "libs")
 }
 
 processResources {
