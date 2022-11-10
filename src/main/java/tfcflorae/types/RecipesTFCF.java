@@ -287,27 +287,6 @@ public final class RecipesTFCF
             }
         }
 
-        if (!TFCFlorae.TFCElementiaAdded)
-        {
-            IForgeRegistryModifiable<IRecipe> registry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
-            String[] regNames = {
-                "metal/unmold/halberd_blade",
-                "metal/unmold/metal_block",
-                "metal/unmold/nail",
-                "metal/unmold/ring",
-                "metal/unmold/sheet_metal_block"
-            };
-            for (String name : regNames)
-            {
-                IRecipe recipe = registry.getValue(new ResourceLocation("tfcflorae", name));
-                if (recipe != null)
-                {
-                    registry.remove(recipe.getRegistryName());
-                    TFCFlorae.logger.info("Removed crafting recipe tfcflorae:{}", name);
-                }
-            }
-        }
-
         if (!ConfigTFCF.General.WORLD.enableAllCoarse)
         {
             for (Rock rock : TFCRegistries.ROCKS.getValuesCollection())
@@ -431,7 +410,7 @@ public final class RecipesTFCF
                 }
             }
         }
-        if (!ConfigTFCF.General.WORLD.enableAllEarthenwareClay || !TFCFlorae.TFCElementiaAdded)
+        if (!ConfigTFCF.General.WORLD.enableAllEarthenwareClay)
         {
             IForgeRegistryModifiable<IRecipe> registry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
             String[] regNames = {
@@ -534,7 +513,7 @@ public final class RecipesTFCF
                 }
             }
         }
-        if (!ConfigTFCF.General.WORLD.enableAllKaoliniteClay || !TFCFlorae.TFCElementiaAdded)
+        if (!ConfigTFCF.General.WORLD.enableAllKaoliniteClay)
         {
             IForgeRegistryModifiable<IRecipe> registry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
             String[] regNames = {
@@ -637,7 +616,7 @@ public final class RecipesTFCF
                 }
             }
         }
-        if (!ConfigTFCF.General.WORLD.enableAllStonewareClay || !TFCFlorae.TFCElementiaAdded)
+        if (!ConfigTFCF.General.WORLD.enableAllStonewareClay)
         {
             IForgeRegistryModifiable<IRecipe> registry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
             String[] regNames = {

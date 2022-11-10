@@ -71,7 +71,6 @@ public class TFCFlorae
     public static final String SIGNING_KEY = "@FINGERPRINT@";
     public static final String DEPENDENCIES = "required-after:tfc@[1.7,);"
             + "after:firmalife;"
-//            + "after:tfcelementia;"
 //            + "after:tfc_ph_compat;"
             + "required-after:loliasm;";
 
@@ -81,7 +80,6 @@ public class TFCFlorae
     public static boolean signedBuild = true;
 
     public static boolean FirmaLifeAdded = false;
-    public static boolean TFCElementiaAdded = false;
     public static boolean TFCPHCompatAdded = false;
 
     @SidedProxy(serverSide = "tfcflorae.proxy.CommonProxy", clientSide = "tfcflorae.proxy.ClientProxy")
@@ -136,8 +134,6 @@ public class TFCFlorae
         {
             if (Mod.getModId().equals("firmalife"))
                 FirmaLifeAdded = true;
-            if (Mod.getModId().equals("tfcelementia"))
-                TFCElementiaAdded = false;
             if (Mod.getModId().equals("tfc_ph_compat"))
                 TFCPHCompatAdded = false;
         }
@@ -149,15 +145,6 @@ public class TFCFlorae
             MinecraftForge.EVENT_BUS.register(CastingRecipeWrapperKaoliniteFL.class);
             MinecraftForge.EVENT_BUS.register(UnmoldRecipeWrapperKaoliniteFL.class);
             MinecraftForge.EVENT_BUS.register(UnmoldMalletRecipe.class);
-        }
-        if (TFCFlorae.TFCElementiaAdded)
-        {
-            MinecraftForge.EVENT_BUS.register(ItemKaoliniteMoldTFCE.class);
-            MinecraftForge.EVENT_BUS.register(ItemUnfiredKaoliniteMoldTFCE.class);
-            MinecraftForge.EVENT_BUS.register(JEIPluginTFCECompat.class);
-            MinecraftForge.EVENT_BUS.register(CastingRecipeKaoliniteTFCEWrapper.class);
-            MinecraftForge.EVENT_BUS.register(UnmoldRecipeKaoliniteTFCEWrapper.class);
-            MinecraftForge.EVENT_BUS.register(UnmoldRecipeKaolinite.class);
         }
         */
 
