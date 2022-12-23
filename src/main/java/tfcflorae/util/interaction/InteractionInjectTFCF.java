@@ -19,7 +19,7 @@ import net.dries007.tfc.objects.blocks.stone.BlockFarmlandTFC;
 import net.dries007.tfc.objects.items.ItemSeedsTFC;
 import net.dries007.tfc.util.agriculture.Crop;
 
-//import hu.lebeg134.tfc_ph_compat.util.agriculture.TPCrop;
+import hu.lebeg134.tfc_ph_compat.util.agriculture.TPCrop;
 
 import tfcflorae.TFCFlorae;
 import tfcflorae.objects.blocks.blocktype.farmland.FarmlandTFCF;
@@ -47,13 +47,13 @@ public class InteractionInjectTFCF
                 for(CropTFCF crop : CropTFCF.values())
                     if (itemSeed == ItemSeedsTFC.get(crop))
                         seedCrop = crop;
-//            if (TFCFlorae.TFCPHCompatAdded)
-//            {
-//                if (seedCrop == null)
-//                    for(TPCrop crop : TPCrop.values())
-//                        if (itemSeed == ItemSeedsTFC.get(crop))
-//                            seedCrop = crop;
-//            }
+            if (TFCFlorae.TFCPHCompatAdded)
+            {
+                if (seedCrop == null)
+                    for(TPCrop crop : TPCrop.values())
+                        if (itemSeed == ItemSeedsTFC.get(crop))
+                            seedCrop = crop;
+            }
 
             if (seedCrop == null)
             {

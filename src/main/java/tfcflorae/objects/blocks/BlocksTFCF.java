@@ -22,6 +22,7 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
+import tfcelementia.objects.PowderTFCE;
 import net.minecraft.block.BlockGravel;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.init.Blocks;
@@ -374,7 +375,7 @@ public final class BlocksTFCF
     private static ImmutableList<BlockMetalAlembic> allBlockMetalAlembics = Helpers.getNull();
     private static ImmutableList<ItemBlockCondenser> allItemBlockCondenser = Helpers.getNull();
     private static ImmutableList<BlockPowder> allPowders;
-
+    private static ImmutableList<BlockPowderTFCE> allPowdersTFCE;
     //private static ImmutableList<MultiBlockBase> allMultiBlocks = Helpers.getNull();
 
     public static String[] bamboo = {"arrow_bamboo", "black_bamboo", "blue_bamboo", "dragon_bamboo", "golden_bamboo", "narrow_leaf_bamboo", "red_bamboo", "temple_bamboo", "thorny_bamboo", "timber_bamboo", "tinwa_bamboo", "weavers_bamboo"};
@@ -735,6 +736,10 @@ public final class BlocksTFCF
         return allPowders;
     }
 
+    public static ImmutableList<BlockPowderTFCE> getAllPowdersTFCE()
+    {
+        return allPowdersTFCE;
+    }
 
     /*public static ImmutableList<MultiBlockBase> getAllMultiBlocks()
     {
@@ -804,6 +809,7 @@ public final class BlocksTFCF
         ImmutableList.Builder<BlockMetalAlembic> metalAlembics = ImmutableList.builder();
         ImmutableList.Builder<ItemBlockCondenser> itemBlockCondenser = ImmutableList.builder();
         ImmutableList.Builder<BlockPowder> blockPowder = ImmutableList.builder();
+        ImmutableList.Builder<BlockPowderTFCE> blockPowderTFCE = ImmutableList.builder();
         //ImmutableList.Builder<MultiBlockBase> multiBlock = ImmutableList.builder();
 
         normalItemBlocks.add(new ItemBlockDryer(register(r, "devices/dryer", new BlockDryer(), CT_MISC)));
@@ -1235,6 +1241,18 @@ public final class BlocksTFCF
                 }
             }
             allPowders = blockPowder.build();
+        }
+
+        if (TFCFlorae.TFCElementiaAdded)
+        {
+            for (PowderTFCE powder : PowderTFCE.values())
+            {
+                if (powder == PowderTFCE.AMMONIUM_CHLORIDE)
+                {
+                    blockPowderTFCE.add(register(r, "powder/" + powder.name().toLowerCase(), new BlockPowderTFCE(powder), CT_ROCK_BLOCKS));
+                }
+            }
+            allPowdersTFCE = blockPowderTFCE.build();
         }
 
         for (RockTFCF rockTFCF : RockTFCF.values())
@@ -1839,6 +1857,10 @@ public final class BlocksTFCF
         register(TEAlembic.class, "alembic");
         register(TEPowder.class, "powder");
         register(TESaguaroCactus.class, "saguaro_cactus");
+        if (TFCFlorae.TFCElementiaAdded)
+        {
+            register(TEPowderTFCE.class, "powdertfce");
+        }
     }
 
     @SubscribeEvent(priority = EventPriority.NORMAL)

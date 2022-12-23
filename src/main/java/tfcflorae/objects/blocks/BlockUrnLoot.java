@@ -10,7 +10,7 @@ import com.eerussianguy.firmalife.registry.ItemsFL;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableList.Builder;
 
-//import hu.lebeg134.tfc_ph_compat.objects.items.ItemsTPC;
+import hu.lebeg134.tfc_ph_compat.objects.items.ItemsTPC;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -72,12 +72,12 @@ public class BlockUrnLoot extends Block implements IItemSize
                     if (item.getRegistryName().getPath().contains("seeds/"))
                         buildSeeds.add(item);
             }
-//            if (TFCFlorae.TFCPHCompatAdded)
-//            {
-//                for (Item item : ItemsTPC.getAllSimpleItems())
-//                    if (item.getRegistryName().getPath().contains("seeds/"))
-//                        buildSeeds.add(item);
-//            }
+            if (TFCFlorae.TFCPHCompatAdded)
+            {
+                for (Item item : ItemsTPC.getAllSimpleItems())
+                    if (item.getRegistryName().getPath().contains("seeds/"))
+                        buildSeeds.add(item);
+            }
 
             seedsList = buildSeeds.build();
         }
