@@ -49,16 +49,11 @@ import tfcflorae.compat.firmalife.jei.JEIPluginFLCompat;
 import tfcflorae.compat.firmalife.jei.category.*;
 import tfcflorae.compat.firmalife.jei.wrappers.*;
 import tfcflorae.compat.firmalife.recipes.*;
-import tfcflorae.compat.tfcelementia.ceramics.*;
-import tfcflorae.compat.tfcelementia.jei.JEIPluginTFCECompat;
-import tfcflorae.compat.tfcelementia.jei.wrappers.*;
-import tfcflorae.compat.tfcelementia.recipes.*;
 import tfcflorae.objects.LootTablesTFCF;
 import tfcflorae.objects.entity.EntitiesTFCF;
 import tfcflorae.objects.items.ItemsTFCF;
 import tfcflorae.proxy.CommonProxy;
 import tfcflorae.util.CapabilityHeatHandler;
-import tfcflorae.util.ClassAdder;
 import tfcflorae.util.HelpersTFCF;
 import tfcflorae.util.OreDictionaryHelper;
 import tfcflorae.util.fuel.FuelsTFCF;
@@ -76,8 +71,7 @@ public class TFCFlorae
     public static final String SIGNING_KEY = "@FINGERPRINT@";
     public static final String DEPENDENCIES = "required-after:tfc@[1.7,);"
             + "after:firmalife;"
-            + "after:tfcelementia;"
-            + "after:tfc_ph_compat;"
+//            + "after:tfc_ph_compat;"
             + "required-after:loliasm;";
 
     @Mod.Instance
@@ -86,7 +80,6 @@ public class TFCFlorae
     public static boolean signedBuild = true;
 
     public static boolean FirmaLifeAdded = false;
-    public static boolean TFCElementiaAdded = false;
     public static boolean TFCPHCompatAdded = false;
 
     @SidedProxy(serverSide = "tfcflorae.proxy.CommonProxy", clientSide = "tfcflorae.proxy.ClientProxy")
@@ -126,7 +119,6 @@ public class TFCFlorae
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        ClassAdder.addClasses(event.getModConfigurationDirectory());
         logger = event.getModLog();
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
@@ -142,10 +134,8 @@ public class TFCFlorae
         {
             if (Mod.getModId().equals("firmalife"))
                 FirmaLifeAdded = true;
-            if (Mod.getModId().equals("tfcelementia"))
-                TFCElementiaAdded = true;
             if (Mod.getModId().equals("tfc_ph_compat"))
-                TFCPHCompatAdded = true;
+                TFCPHCompatAdded = false;
         }
         /*
         if (TFCFlorae.FirmaLifeAdded)
@@ -155,15 +145,6 @@ public class TFCFlorae
             MinecraftForge.EVENT_BUS.register(CastingRecipeWrapperKaoliniteFL.class);
             MinecraftForge.EVENT_BUS.register(UnmoldRecipeWrapperKaoliniteFL.class);
             MinecraftForge.EVENT_BUS.register(UnmoldMalletRecipe.class);
-        }
-        if (TFCFlorae.TFCElementiaAdded)
-        {
-            MinecraftForge.EVENT_BUS.register(ItemKaoliniteMoldTFCE.class);
-            MinecraftForge.EVENT_BUS.register(ItemUnfiredKaoliniteMoldTFCE.class);
-            MinecraftForge.EVENT_BUS.register(JEIPluginTFCECompat.class);
-            MinecraftForge.EVENT_BUS.register(CastingRecipeKaoliniteTFCEWrapper.class);
-            MinecraftForge.EVENT_BUS.register(UnmoldRecipeKaoliniteTFCEWrapper.class);
-            MinecraftForge.EVENT_BUS.register(UnmoldRecipeKaolinite.class);
         }
         */
 
