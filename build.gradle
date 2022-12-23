@@ -65,6 +65,7 @@ dependencies {
 
     compile "curse.maven:nyx-rotn-edition-437663:3840824"
     compile "curse.maven:realistic-terrain-generation-unofficial-648514:3967962"
+    compile "curse.maven:patchouli-306770:3162874"
 
     provided files("./libs/firmalife-0.5.1.jar")
     compile files("./libs/MTLib-3.0.7.jar")
