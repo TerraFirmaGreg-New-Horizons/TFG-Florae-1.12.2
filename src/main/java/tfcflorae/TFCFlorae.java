@@ -62,13 +62,12 @@ import tfcflorae.proxy.ClientProxy;
 import static tfcflorae.TFCFlorae.MODID;
 
 @SuppressWarnings({ "WeakerAccess", "unused" })
-@Mod(modid = TFCFlorae.MODID, name = TFCFlorae.NAME, version = TFCFlorae.VERSION, dependencies = TFCFlorae.DEPENDENCIES, certificateFingerprint = TFCFlorae.SIGNING_KEY)
+@Mod(modid = TFCFlorae.MODID, name = TFCFlorae.NAME, version = TFCFlorae.VERSION, dependencies = TFCFlorae.DEPENDENCIES)
 public class TFCFlorae
 {
     public static final String MODID = "tfcflorae";
     public static final String NAME = "TFC Florae";
     public static final String VERSION = "@VERSION@";
-    public static final String SIGNING_KEY = "@FINGERPRINT@";
     public static final String DEPENDENCIES = "required-after:tfc@[1.7,);"
             + "after:firmalife;"
 //            + "after:tfc_ph_compat;"
@@ -107,14 +106,6 @@ public class TFCFlorae
 
     private SimpleNetworkWrapper network;
 
-    @EventHandler
-    public void onFingerprintViolation(FMLFingerprintViolationEvent event)
-    {
-        /*if (!event.isDirectory())
-        {
-            signedBuild = false; // todo disabled for the time being
-        }*/
-    }
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -125,10 +116,6 @@ public class TFCFlorae
         network = NetworkRegistry.INSTANCE.newSimpleChannel(MODID);
         int id = 0;
 
-        if (!signedBuild)
-        {
-            logger.error("INVALID FINGERPRINT DETECTED!");
-        }
 
         for (ModContainer Mod : Loader.instance().getActiveModList())
         {
