@@ -62,7 +62,9 @@ dependencies {
     compile "curse.maven:had-enough-items-557549:3957880"
     compile "curse.maven:crafttweaker-239197:4036242"
     compile "curse.maven:the-one-probe-245211:2667280"
+
     compile "curse.maven:nyx-rotn-edition-437663:3840824"
+    compile "curse.maven:realistic-terrain-generation-unofficial-648514:3967962"
 
     provided files("./libs/firmalife-0.5.1.jar")
     compile files("./libs/MTLib-3.0.7.jar")
