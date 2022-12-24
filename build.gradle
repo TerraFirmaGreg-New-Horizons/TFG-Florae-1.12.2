@@ -65,14 +65,18 @@ dependencies {
 
     compile "curse.maven:nyx-rotn-edition-437663:3840824"
     compile "curse.maven:realistic-terrain-generation-unofficial-648514:3967962"
-    compile "curse.maven:patchouli-306770:3162874"
+//    compile "curse.maven:patchouli-306770:3162874"
 
-    provided files("./libs/firmalife-0.5.1.jar")
-    compile files("./libs/MTLib-3.0.7.jar")
-    compile files("./libs/TerraFirmaCraft-MC1.12.2-1.7.23.181-deobf.jar")
-    compile files("./libs/TFC-Elementia-MC1.12.2-1.7.jar")
-    compile files("./libs/TFC_PH_Compat-1.12.2-1.1.1.jar")
-    provided files("./libs/TFCTech-Unofficial-MC1.12.2-1.2.16.jar")
+    provided "curse.maven:firmalife-453394:3612887"
+    provided "curse.maven:mtlib-253211:3308160"
+    provided "curse.maven:tfctech-unofficial-340660:3209033"
+
+//    provided files("./libs/firmalife-0.5.1.jar")
+//    compile files("./libs/MTLib-3.0.7.jar")
+//    compile files("./libs/TerraFirmaCraft-MC1.12.2-1.7.23.181-deobf.jar")
+//    compile files("./libs/TFC-Elementia-MC1.12.2-1.7.jar")
+//    compile files("./libs/TFC_PH_Compat-1.12.2-1.1.1.jar")
+//    provided files("./libs/TFCTech-Unofficial-MC1.12.2-1.2.16.jar")
 
 //    compile project(path: ':TFG-TerraFirmaCraft-1.12.2')
 //    compile project(path: ':TFG-Firmalife-1.12.2')
